@@ -1,0 +1,41 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OnSale {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  background-color: lightgreen;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box.one {
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+
+
+.box.two {background-color: peru;}
+.box.three {background-color: pink;}
+.box.four {background-color: plum;}
+.box.five {background-color: sandybrown;}
+.box.six {background-color: sienna;}
+

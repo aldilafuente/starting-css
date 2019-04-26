@@ -3,26 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="css/style2.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <title> Second Index </title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="OnSale">
-      <div class="box one">
-        <h1> OFERTAS </h1>
-        <h2> Destacadas </h2>
-        <div class="counter">
+  <div class="main-container">
+    <div class="offers">
+      <div class="boxes" id="one">
+        <div class="text">
+          <h1 class="title"> OFERTAS </h1>
+          <h2 class="subtitle"> Destacadas </h2>
+        </div>
+        <div class="countdown">
           <div class="time"> 05:21:24 </div>
-          <div class="units"> HS MIN SEG </div>
-          <button> VER TODAS </button>
+          <div class="time-units">
+            <span class="hours"> HS </span>
+            <span class="minutes"> MIN </span>
+            <span class="seconds"> SEG </span>
+          </div>
+          <!-- <div class="time-units"> HS &nbsp; MIN &nbsp; SEG </div> -->
+        </div>
+        <button> VER TODAS </button>
+      </div>
+      <div class="boxes" id="two">
+        <div class="picture"><img
+            src="https://www.novogar.com.ar/public/images/productos/producto_2012_1.jpg?rnd=1612493863"
+            alt="Smart TV" /></div>
+        <div class="description">
+          <div class="product"> Smart TV Philco 32" H... </div>
+          <div class="details"> Apto Netflix </div>
+        </div>
+        <div class="price"> $8.999 </div>
+        <div class="OnSale">
+          <span class="old-price"> $11.999 </span>
+          <span class="discount"> 25% OFF </span>
         </div>
       </div>
-      <div class="box two"> 2 </div>
-      <div class="box three"> 3 </div>
-      <div class="box four"> 4 </div>
-      <div class="box five"> 5 </div>
-      <div class="box six"> 6 </div>
+      <div class="boxes" id="three">
+        <div class="picture">
+          <img src="https://www.lg.com/ar/images/celulares/md05870476/gallery/LGM700AR-desktop1-23082017.jpg"
+            alt="Celular LG" />
+        </div>
+        <div class="description">
+          <div class="product"> Celular Libre LG Q6 Azul </div>
+          <div class="details"> Octa Core </div>
+        </div>
+        <div class="price"> $7.999 </div>
+        <div class="OnSale">
+          <span class="old-price"> $9.999 </span>
+          <span class="discount"> 20% OFF </span>
+        </div>
+      </div>
+      <div class="boxes" id="four">
+        <div class="picture">
+          <img
+            src="https://http2.mlstatic.com/heladera-con-freezer-gafa-hgf387-aw-365-lts-34-406-D_NQ_NP_660234-MLA26034999564_092017-F.jpg"
+            alt="Heladera GAFA" /></div>
+        <div class="description">
+          <div class="product"> Heladera con Freezer ... </div>
+          <div class="details"> 6 cuotas sin interés </div>
+        </div>
+        <div class="price"> $23.999 </div>
+        <div class="OnSale">
+          <span class="old-price"> $33.499 </span>
+          <span class="discount"> 28% OFF </span>
+        </div>
+      </div>
+      <div class="boxes" id="five">
+        <div class="picture">
+          <img
+            src="https://http2.mlstatic.com/cafetera-nespresso-essenza-mini-red-pack-aeroccino-D_NQ_NP_655981-MLA29802884418_042019-F.jpg"
+            alt="Cafetera Nespresso" /></div>
+        <div class="description">
+          <div class="product"> Cafetera Nespresso Es... </div>
+          <div class="details"> 6 cuotas sin interés </div>
+        </div>
+        <div class="price"> $6.199 </div>
+        <div class="OnSale">
+          <span class="old-price"> $8.290 </span>
+          <span class="discount"> 25% OFF </span>
+        </div>
+      </div>
+      <div class="boxes" id="six">
+        <div class="picture">
+          <img src="https://http2.mlstatic.com/lavarropas-automatico-drean-5-kg-concept-fuzzy-logic-tech-v-D_NQ_NP_859239-MLA27387212876_052018-F.jpg"
+            alt="Lavarropas Drean" /></div>
+        <div class="description">
+          <div class="product"> Lavarropas Automático... </div>
+          <div class="details"> 5 KG </div>
+        </div>
+        <div class="price"> $11.999 </div>
+        <div class="OnSale">
+          <span class="old-price"> $14.999 </span>
+          <span class="discount"> 20% OFF </span>
+        </div>
+      </div>
     </div>
   </div>
 </body>

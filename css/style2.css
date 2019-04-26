@@ -1,41 +1,163 @@
 html, body {
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.container {
+/* contenedor principal */
+.main-container {
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: gray;
 }
 
-.OnSale {
+/* contenedor con los divs más chicos, "ofertas" */
+.offers {
   width: auto;
   height: auto;
   display: flex;
   align-items: center;
-  /* justify-content: space-evenly; */
-  background-color: lightgreen;
+  background-color: white;
 }
 
-.box {
+/* cada cajita por separado, u "oferta" */
+.boxes {
+  width: 200px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
-.box.one {
-  background-color: lightgrey;
-  padding: 20px;
+/* comienzo del primer div, caja uno */
+#one .text {
+  text-align: center;
+  line-height: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#one .text .title { font-size: 30px; line-height: 15px;}
+#one .text .subtitle { font-size: 18px; }
+
+/* contador en horas, minutos y segundos */
+.countdown {
+  text-align: center;
+  line-height: 25px;
+}
+
+.countdown .time {
+  color: #0084E0;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.countdown .time-units {
+  color: #9E9E9E;
+  font-size: 12px;
+  word-spacing: 31px;
+  margin-left: 4px;
+}
+
+/* botón de VER TODAS */
+button {
+  height: 35px;
+  width: 110px;
+  margin-top: 15px;
+  border-bottom: 2px outset #0084E0;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #0084E0;
+}
+
+/* finalización de primer contendor, caja uno */
+
+
+/* imagen del resto de los contenedores */
+.picture {
+  width: 100%;
+  height: auto;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
+}
+/* hasta acá imagen del resto de los contenedores */
+
+/* desde acá, nombre del producto y algún pequeño detalle */
+.description {
+  width: 100%;
+  text-align: center; 
+  line-height: 25px;
+}
+
+.description .product { font-size: 17px; }
+.description .details { font-size: 16px; color: #9E9E9E;}
+/* hasta acá descripción */
+
+/* el precio, en rojo */
+.price {
+  width: 100%;
+  text-align: center;
+  color: #D1030F;
+  font-size: 32px;
+}
+
+/* la promoción, tanto el precio anterior como su descuento */
+.OnSale {
+  width: 70%;
+  font-weight: 300;
+  text-align: center;
+}
+
+.OnSale .old-price {
+  color: #9E9E9E;
+  text-decoration: line-through;
+  margin-right: 7px;
+}
+
+.OnSale .discount {
+  color: #0F7300;
 }
 
 
+/* pequeños arreglos de las cajas, por separado */
+#three .description {
+  margin-top: 20px;
+}
 
-.box.two {background-color: peru;}
-.box.three {background-color: pink;}
-.box.four {background-color: plum;}
-.box.five {background-color: sandybrown;}
-.box.six {background-color: sienna;}
+#four .picture {
+  height: 50%;
+  width: auto;
+}
 
+#four .picture img {
+  height: 100%;
+  width: auto;
+}
+
+#five .picture {
+  height: 50%;
+  width: auto;
+}
+
+#five .picture img {
+  height: 100%;
+}
+
+#six .picture {
+  height: 50%;
+  width: auto;
+}
+
+#six .picture img {
+  height: 100%;
+}

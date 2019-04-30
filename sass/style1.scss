@@ -18,17 +18,18 @@ html, body {
   align-items: center;
   flex-wrap: wrap;
   background-color: #ececec;
-}
-.portfolio .startups {
-  width: 45%;
-  margin: 15px;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  background-color: white;
-  border-radius: 5px;
-  border-bottom: 2px inset #b3b3b3;
+
+  .startups {
+    width: 45%;
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom: 2px inset #b3b3b3;
+  }
 }
 
 .img-box {
@@ -36,16 +37,15 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.img-box img {
+  
+  img {
   width: 75%;
   height: auto;
+  }
 }
 
 .text {
   width: 60%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
-
-/*# sourceMappingURL=style1.css.map */

@@ -1,0 +1,170 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+// ACÁ TODAS LAS VARIABLES Y MIXINS DE SASS
+$blue-color: #0084E0;
+$gray-color: #9E9E9E;
+$text-center: center;
+
+@mixin size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin flex($flex, $align, $justify) {
+  display: $flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+// VARIABLES Y MIXINS DE SASS
+
+
+
+/* contenedor principal */
+.main-container {
+  @include size(100%, 100%);
+  @include flex(flex, center, center);
+  background-color: rgb(141, 141, 141);
+}
+
+/* contenedor con los divs más chicos, "ofertas" */
+.offers {
+  @include flex(flex, center, center);
+  background-color: white;
+}
+
+/* cada cajita por separado, u "oferta" */
+.boxes {
+  @include size(300px, 200px);
+  @include flex(flex, center, center);
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* comienzo del primer contenedor, caja uno */
+#one .text {
+  text-align: $text-center;
+  line-height: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+
+  .title { 
+    font-size: 30px; 
+    line-height: 15px;
+  }
+
+  .subtitle { 
+    font-size: 18px; 
+  }
+}
+
+/* contador en horas, minutos y segundos */
+.countdown {
+  text-align: $text-center;
+  line-height: 25px;
+
+  .time {
+    color: $blue-color;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .time-units {
+    color: $gray-color;
+    font-size: 12px;
+    word-spacing: 31px;
+    margin-left: 4px;
+  }
+}
+
+.button {
+  @include size(35px, 110px);
+  margin-top: 15px;
+  color: white;
+  font-size: 14px;
+  border-radius: 3px;
+  border-bottom: 2px outset $blue-color;
+  background-color: $blue-color;
+}
+/* finalización de primer contenedor, caja uno */
+
+
+/* imagen del resto de los contenedores */
+.picture, .picture img { @include size(auto, 100%); }
+/* hasta acá imagen del resto de los contenedores */
+
+/* desde acá, nombre del producto y algún pequeño detalle */
+.description {
+  @include size(auto, 100%);
+  text-align: $text-center; 
+  line-height: 25px;
+
+  .product { 
+    font-size: 17px; 
+  }
+  
+  .details { 
+    font-size: 16px; 
+    color: $gray-color;
+  }
+}
+/* hasta acá descripción */
+
+/* el precio, en rojo */
+.price {
+  width: 100%;
+  text-align: $text-center;
+  color: #D1030F;
+  font-size: 32px;
+}
+
+/* la promoción, tanto el precio anterior como su descuento */
+.OnSale {
+  @include size(auto, 70%);
+  font-weight: 300;
+  text-align: $text-center;
+
+  .old-price {
+    color: $gray-color;
+    text-decoration: line-through;
+    margin-right: 7px;
+  }
+
+  .discount {
+    color: #0F7300;
+  }
+}
+
+/* pequeños arreglos de las cajas, por separado */
+#three .description {
+  margin-top: 20px;
+}
+
+#four .picture {
+  @include size(50%, auto);
+  
+  img {
+    @include size(100%, auto);
+  }
+}
+
+#five .picture {
+  @include size(50%, auto);
+
+  img {
+    @include size(100%, auto);
+  }
+}
+
+#six .picture {
+  @include size(50%, auto);
+
+  img {
+    @include size(100%, auto);
+  }
+}
+
